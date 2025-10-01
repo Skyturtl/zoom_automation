@@ -8,7 +8,7 @@ Automates joining Zoom meetings at scheduled times.
 
 ### Clone the repository
 ```bash
-cd "Desired_Directory"
+cd $Replace_with_parent_directory
 git clone https://github.com/Skyturtl/zoom_automation.git
 cd zoom_automation
 python -m venv env
@@ -35,3 +35,17 @@ If you have multiple classes, feel free to add the line `schedule.every().wednes
 
 Finally all you need to do is run 
 `python join_class.py` within the cloned directory. As long as this file is running, then you will be automatically joining your zoom meetings now.
+
+## Notes
+If you want this to run in the background 24/7 leave it as it is otherwise, you will need to add `import sys` at the beginning and `sys.exit(0)` after the code block
+```python
+while True:
+  audio_button = find_img("audio.png")
+  if audio_button:
+      pyautogui.click(audio_button)
+      break
+  time.sleep(3)
+
+  #insert here
+  sys.exit(0)
+```
