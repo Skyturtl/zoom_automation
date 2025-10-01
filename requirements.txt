@@ -1,0 +1,5 @@
+schedule
+pyautogui
+pygetwindow
+opencv-python
+pillow
