@@ -8,7 +8,7 @@ Automates joining Zoom meetings at scheduled times.
 
 ### Clone the repository
 ```bash
-cd $Replace_with_parent_directory
+cd "Desired_Directory"
 git clone https://github.com/Skyturtl/zoom_automation.git
 cd zoom_automation
 python -m venv env
